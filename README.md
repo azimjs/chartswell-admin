@@ -1,4 +1,4 @@
-Chartwell Admin Panel
+Chartswell Admin Panel
 =======
 
 Admin Panel developed in PHP using parse.com as the database for Chartswell Group at University of North Carolina, Charlotte. This project is developed as part of the Advanced MAD course for College of Computing and Informatics.
