@@ -1,4 +1,4 @@
-<?php include('../files/global.php'); ?>
+    <?php include('../files/global.php'); ?>
 <?php
 use Parse\ParseObject;
 use Parse\ParseQuery;

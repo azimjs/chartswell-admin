@@ -6,18 +6,18 @@ use Parse\ParseFile;
 
 $post_message = "";
 
-if(isset($_POST['submit_coupon'])) {
+if(isset($_POST['submit_brand'])) {
 
     $brand = new ParseObject("Brand");
     $brand->set("name", $_POST['brand_name']);
     $brand->set("location", $_POST['brand_location']);
-    $brand->set("multiplier", $_POST['brand_multiplier']);
+    $brand->set("multiplier", (int)$_POST['brand_multiplier']);
     $brand->set("description", $_POST['brand_description']);
 
-    $file = ParseFile::createFromData( file_get_contents( $_FILES['brand_image']['tmp_name'] ), $_FILES['brand_image']['name']  );
+    $file = ParseFile::createFromData(file_get_contents($_FILES['brand_image']['tmp_name']), $_FILES['brand_image']['name']);
     $file->save();
 
-    $brand->set("file", $file);
+    $brand->set("brandImage", $file);
 
     $brand->save();
 
@@ -36,7 +36,7 @@ if(isset($_POST['submit_coupon'])) {
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Add Coupons - <?= $SITE_NAME ?> </title>
+        <title>Add Brands - <?= $SITE_NAME ?> </title>
 
         <?php
         $include_type = "header";
@@ -65,9 +65,53 @@ if(isset($_POST['submit_coupon'])) {
     <!-- Page-Level Demo Scripts - Tables - Use for reference -->
     <script>
         $(document).ready(function () {
+            <?php
+            if($post_message!=""){
+            ?>
+            var form_noti = "<div class=\"alert alert-success\">BRAND SUCCESSFULLY SAVED</div>";
+            $("#formNotification").html(form_noti);
+            <?php
+            }
+            ?>
+
             $('#dataTables-example').DataTable({
                 responsive: true
             });
+
+            $("#brand_form").submit(function(){
+                var error=false;
+                var file=false;
+
+                $("#brand_form :text").each(function(){
+                    if($(this).val()=="") {
+                        $(this).parent().addClass("has-error");
+//                        error = true;
+                        $(this).val("az");
+                    }
+                });
+/*
+                $("#brand_form textarea").each(function(){
+                    if($(this).val()=="") {
+                        $(this).parent().addClass("has-error");
+                        error = true;
+                    }
+                });
+*/
+                if($("input:file").val().trim()=="") {
+                    error = true;
+                    file = true;
+                }
+                if(error){
+                    console.log("error in form");
+                    var form_error = "<div class=\"alert alert-danger\">Required Fields must not be left blank. </div>";
+                    if(file)
+                        form_error += "<div class=\"alert alert-danger\">Uploading Brand Image is Required. </div>";
+                    $("#formNotification").html(form_error);
+                    return false;
+                }
+            });
+
+
         });
     </script>
 
@@ -106,8 +150,11 @@ function content()
                     </div>
                     <div class="panel-body">
                         <div class="row">
+                            <div id="formNotification"></div>
+                        </div>
+                        <div class="row">
                             <div class="col-lg-6">
-                                <form action="" method="post" role="form" enctype="multipart/form-data">
+                                <form action="" method="post" role="form" enctype="multipart/form-data" id="brand_form">
                                     <div class="form-group">
                                         <label>Brand Name</label>
                                         <input class="form-control" name="brand_name" placeholder="Brand Name">
@@ -115,7 +162,7 @@ function content()
                                     </div>
                                     <div class="form-group col-lg-6">
                                         <label>Multiplier</label>
-                                        <input class="form-control" name="brand_multiplier" placeholder="Brand Multiplier">
+                                        <input type="number" class="form-control" name="brand_multiplier" placeholder="Brand Multiplier">
                                         <p class="help-block">Enter the Brand's Multiplier.</p>
                                     </div>
                                     <div class="form-group col-lg-6">
@@ -125,7 +172,7 @@ function content()
                                     </div>
                                     <div class="form-group">
                                         <label>Description</label>
-                                        <textarea name="brand_description" id="" cols="30" rows="10"></textarea>
+                                        <textarea name="brand_description" id="" style="width:100%" rows="6"></textarea>
                                     </div>
                                     <div class="form-group">
                                         <label>Brand Image</label>

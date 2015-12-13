@@ -6,7 +6,7 @@
  * Time: 11:51 AM
  */
 
-error_reporting(0);
+//error_reporting(0);
 
 
 $SITE_NAME = "Chartswell Admin Panel";
@@ -15,7 +15,8 @@ $VERSION = 1.0;
 include("../parse.php");
 use Parse\ParseObject;
 use Parse\ParseQuery;
-
+use Parse\ParseException;
+use Parse\ParseFile;
 
 session_start();
 if(!isset($_SESSION['login_user'])){
