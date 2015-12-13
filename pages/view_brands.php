@@ -92,8 +92,12 @@ function content()
                                     foreach($brands as $brand){
                                         echo "
                                         <tr>
-                                            <td align='center'><a href='http://google.com' data-remote='true' data-toggle='modal' data-target='#myModal'><i class='fa fa-pencil-square' style='font-size: 20px;transition: color 1s;'></i></a></td>
-                                            <td>$brand->objectId</td>
+                                            <td align='center'>
+                                                <a data-toggle='modal' href='../files/ajax.php?class=Brand&objectId=$brand->objectId&name=$brand->name' data-target='#myModal'>
+                                                <i class='fa fa-pencil-square' style='font-size: 20px;transition: color 1s;'></i>
+                                                </a>
+                                            </td>
+                                            <td onclick=\"showSuccessToast('az',false)\">$brand->objectId</td>
                                             <td>$brand->name</td>
                                             <td><img src='$brand->brandImage' width='30' /></td>
                                             <td>$brand->location</td>
@@ -109,27 +113,17 @@ function content()
                                 </tbody>
                             </table>
                         </div>
+                        <!-- /.table-responsive -->
+                        <!-- Modal -->
                         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                    </div>
                                 </div>
                                 <!-- /.modal-content -->
                             </div>
                             <!-- /.modal-dialog -->
                         </div>
-                        <!-- /.table-responsive -->
-
+                        <!-- /.modal -->
                     </div>
                     <!-- /.panel-body -->
                 </div>

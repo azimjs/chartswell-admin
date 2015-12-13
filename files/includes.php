@@ -23,10 +23,6 @@
 
     <!-- Custom CSS -->
     <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -34,13 +30,71 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- Custom Fonts -->
+    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
+    <link type="text/css" href="../dist/jquery-toastmessage-plugin/src/main/resources/css/jquery.toastmessage.css" rel="stylesheet"/>
     <?php
 }
 if ($include_type == "footer") {
     ?>
     <!-- jQuery -->
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../dist/jquery-toastmessage-plugin/src/main/javascript/jquery.toastmessage.js"></script>
+
+    <script type="text/javascript">
+
+        function showSuccessToast(message,sticky) {
+            $().toastmessage('showToast', {
+                text     : message,
+                sticky   : sticky,
+                position : 'top-right',
+                type     : 'success',
+                closeText: '',
+                close    : function () {
+                    console.log("toast is closed ...");
+                }
+            });
+        }
+
+        function showNoticeToast(message,sticky) {
+            $().toastmessage('showToast', {
+                text     : message,
+                sticky   : sticky,
+                position : 'top-right',
+                type     : 'notice',
+                closeText: '',
+                close    : function () {console.log("toast is closed ...");}
+            });
+        }
+
+        function showWarningToast(message,sticky) {
+            $().toastmessage('showToast', {
+                text     : message,
+                sticky   : sticky,
+                position : 'top-right',
+                type     : 'warning',
+                closeText: '',
+                close    : function () {
+                    console.log("toast is closed ...");
+                }
+            });
+        }
+
+        function showErrorToast(message,sticky) {
+            $().toastmessage('showToast', {
+                text     : message,
+                sticky   : sticky,
+                position : 'top-right',
+                type     : 'error',
+                closeText: '',
+                close    : function () {
+                    console.log("toast is closed ...");
+                }
+            });
+        }
+
+    </script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
