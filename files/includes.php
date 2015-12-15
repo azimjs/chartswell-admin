@@ -8,6 +8,17 @@
 ?>
 <?php if ($include_type == "header") {
     ?>
+<!--    <script src="//www.parsecdn.com/js/parse-1.6.7.min.js"></script>
+    <script type="text/javascript">
+        Parse.initialize("qQbKbAOfCCv21GorToroCgmZSFRUzNfjKphATSgR", "qA320hR1s86oFIdMOfkeQ0bQgxGPrefielB0qFHF");
+/*
+        var TestObject = Parse.Object.extend("TestObject");
+        var testObject = new TestObject();
+        testObject.save({foo: "bar"}).then(function(object) {
+            alert("yay! it worked");
+        });
+*/
+    </script>-->
     <!-- Bootstrap Core CSS -->
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -48,7 +59,7 @@ if ($include_type == "footer") {
             $().toastmessage('showToast', {
                 text     : message,
                 sticky   : sticky,
-                position : 'top-right',
+                position : 'middle-center',
                 type     : 'success',
                 closeText: '',
                 close    : function () {
@@ -61,7 +72,7 @@ if ($include_type == "footer") {
             $().toastmessage('showToast', {
                 text     : message,
                 sticky   : sticky,
-                position : 'top-right',
+                position : 'middle-center',
                 type     : 'notice',
                 closeText: '',
                 close    : function () {console.log("toast is closed ...");}
@@ -72,7 +83,7 @@ if ($include_type == "footer") {
             $().toastmessage('showToast', {
                 text     : message,
                 sticky   : sticky,
-                position : 'top-right',
+                position : 'middle-center',
                 type     : 'warning',
                 closeText: '',
                 close    : function () {
@@ -85,7 +96,7 @@ if ($include_type == "footer") {
             $().toastmessage('showToast', {
                 text     : message,
                 sticky   : sticky,
-                position : 'top-right',
+                position : 'middle-center',
                 type     : 'error',
                 closeText: '',
                 close    : function () {

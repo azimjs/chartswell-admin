@@ -1,3 +1,7 @@
+<script src="../js/parse-1.6.7.min.js"></script>
+<script type="text/javascript">
+    Parse.initialize("qQbKbAOfCCv21GorToroCgmZSFRUzNfjKphATSgR", "qA320hR1s86oFIdMOfkeQ0bQgxGPrefielB0qFHF");
+</script>
 <?php
 /**
  * Created by PhpStorm.

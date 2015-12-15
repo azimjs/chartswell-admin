@@ -43,8 +43,8 @@
                 responsive: true
             });
         });
-    </script>
 
+    </script>
     </body>
 
     </html>
@@ -93,7 +93,7 @@ function content()
                                         echo "
                                         <tr>
                                             <td align='center'>
-                                                <a data-toggle='modal' href='../files/ajax.php?class=Brand&objectId=$brand->objectId&name=$brand->name' data-target='#myModal'>
+                                                <a class='open-modal' data-toggle='modal' href='../files/ajax.php?class=Brand&objectId=$brand->objectId&name=$brand->name&type=edit' data-target='#myModal'>
                                                 <i class='fa fa-pencil-square' style='font-size: 20px;transition: color 1s;'></i>
                                                 </a>
                                             </td>
@@ -115,6 +115,7 @@ function content()
                         </div>
                         <!-- /.table-responsive -->
                         <!-- Modal -->
+                        <span id="onLoad" style="position:absolute;left:100px;top:100px;z-index:1000000;" hidden>Loading...</span>
                         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">

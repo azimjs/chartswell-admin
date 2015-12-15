@@ -4,10 +4,11 @@ session_start();
 include("../parse.php");
 
 error_reporting(0);
+$redirect_page = "view_brands.php";
 use Parse\ParseUser;
 use Parse\ParseException;
 if(isset($_SESSION['login_user'])){
-    header("location: view_coupons.php"); // Redirecting To Other Page
+    header("location: $redirect_page"); // Redirecting To Other Page
 }
 
 $error= false; // Variable To Store Error Message
@@ -18,6 +19,7 @@ if (isset($_POST['login_submit'])) {
     else
     {
 // Define $username and $password
+        $displayToast = "";
         $username=$_POST['username'];
         $password=$_POST['password'];
 // Establishing Connection with Server by passing server_name, user_id and password as a parameter
@@ -33,7 +35,7 @@ if (isset($_POST['login_submit'])) {
             $user = ParseUser::logIn($username, $password);
             // Do stuff after successful login.
             $_SESSION['login_user']=$username; // Initializing Session
-            header("location: view_coupons.php"); // Redirecting To Other Page
+            header("location: $redirect_page"); // Redirecting To Other Page
         } catch (ParseException $error) {
             // The login failed. Check error to see why.
             $error = true;
@@ -67,6 +69,8 @@ if (isset($_POST['login_submit'])) {
 
     <!-- Custom Fonts -->
     <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link type="text/css" href="../dist/jquery-toastmessage-plugin/src/main/resources/css/jquery.toastmessage.css" rel="stylesheet"/>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -131,6 +135,68 @@ if (isset($_POST['login_submit'])) {
 
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../dist/jquery-toastmessage-plugin/src/main/javascript/jquery.toastmessage.js"></script>
+
+    <script type="text/javascript">
+
+        function showSuccessToast(message,sticky) {
+            $().toastmessage('showToast', {
+                text     : message,
+                sticky   : sticky,
+                position : 'top-right',
+                type     : 'success',
+                closeText: '',
+                close    : function () {
+                    console.log("toast is closed ...");
+                }
+            });
+        }
+
+        function showNoticeToast(message,sticky) {
+            $().toastmessage('showToast', {
+                text     : message,
+                sticky   : sticky,
+                position : 'top-right',
+                type     : 'notice',
+                closeText: '',
+                close    : function () {console.log("toast is closed ...");}
+            });
+        }
+
+        function showWarningToast(message,sticky) {
+            $().toastmessage('showToast', {
+                text     : message,
+                sticky   : sticky,
+                position : 'top-right',
+                type     : 'warning',
+                closeText: '',
+                close    : function () {
+                    console.log("toast is closed ...");
+                }
+            });
+        }
+
+        function showErrorToast(message,sticky) {
+            $().toastmessage('showToast', {
+                text     : message,
+                sticky   : sticky,
+                position : 'top-right',
+                type     : 'error',
+                closeText: '',
+                close    : function () {
+                    console.log("toast is closed ...");
+                }
+            });
+        }
+
+    </script>
+
+    <?php
+    if(isset($displayToast))
+        echo "<script type='text/javascript'>showSuccessToast('message',false)</script>";
+    ?>
+
 
 </body>
 
