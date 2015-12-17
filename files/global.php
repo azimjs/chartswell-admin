@@ -82,9 +82,9 @@ function getACoupon(ParseObject $object){
         $couponBrand = $object->get('brand')->fetch();
         $coupon->brand = getABrand($couponBrand);
     }
-else{
-    $coupon->brand = null;
-}
+    else{
+        $coupon->brand = null;
+    }
 
     $coupon->currentUsage = $object->get('currentUsage');
     $coupon->endDateTime = $object->get('endDateTime');

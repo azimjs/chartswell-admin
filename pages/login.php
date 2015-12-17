@@ -70,7 +70,7 @@ if (isset($_POST['login_submit'])) {
     <!-- Custom Fonts -->
     <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <link type="text/css" href="../dist/jquery-toastmessage-plugin/src/main/resources/css/jquery.toastmessage.css" rel="stylesheet"/>
+    <link type="text/css" href="../js/resources/css/jquery.toastmessage.css" rel="stylesheet"/>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -136,7 +136,7 @@ if (isset($_POST['login_submit'])) {
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="../dist/jquery-toastmessage-plugin/src/main/javascript/jquery.toastmessage.js"></script>
+    <script type="text/javascript" src="../js/jquery.toastmessage.js"></script>
 
     <script type="text/javascript">
 

@@ -244,6 +244,9 @@
                     <!-- /input-group -->
                 </li>
                 <li>
+                    <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                </li>
+                <li>
                     <a href="#"><i class="fa fa-table fa-fw"></i> Brands</a>
                     <ul class="nav nav-second-level">
                         <li>
@@ -278,12 +281,6 @@
                         </li>
                     </ul>
                     <!-- /.nav-second-level -->
-                </li>
-                <?php
-                /*
-                ?>
-                <li>
-                    <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
@@ -369,8 +366,6 @@
                     </ul>
                     <!-- /.nav-second-level -->
                 </li>
-                                 */
-                ?>
 
             </ul>
         </div>

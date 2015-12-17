@@ -44,14 +44,14 @@
     <!-- Custom Fonts -->
     <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <link type="text/css" href="../dist/jquery-toastmessage-plugin/src/main/resources/css/jquery.toastmessage.css" rel="stylesheet"/>
+    <link type="text/css" href="../js/resources/css/jquery.toastmessage.css" rel="stylesheet"/>
     <?php
 }
 if ($include_type == "footer") {
     ?>
     <!-- jQuery -->
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="../dist/jquery-toastmessage-plugin/src/main/javascript/jquery.toastmessage.js"></script>
+    <script type="text/javascript" src="../js/jquery.toastmessage.js"></script>
 
     <script type="text/javascript">
 
@@ -106,7 +106,6 @@ if ($include_type == "footer") {
         }
 
     </script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
@@ -119,6 +118,7 @@ if ($include_type == "footer") {
 
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
+    <script type="text/javascript" src="../js/jquery.canvasjs.min.js"></script>
 
 
     <?php

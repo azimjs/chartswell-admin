@@ -8,7 +8,7 @@
 include('global.php');
 use Parse\ParseQuery;
 
-$class = $_GET['class'];
+$class = trim($_GET['class']);
 $type = $_GET['type'];
 $objectId = $_GET['objectId'];
 $name = $_GET['name'];
@@ -22,7 +22,7 @@ try {
     // error is a ParseException with an error code and message.
 }
 
-if($class="Brand" && $type = "edit") {
+if($class=="Brand" && $type == "edit") {
     ?>
     <script type="text/javascript">
         $("#save_changes").click(function(){
@@ -50,8 +50,6 @@ if($class="Brand" && $type = "edit") {
                     if (fileUploadControl.files.length > 0) {
                         var file = fileUploadControl.files[0];
                         var file_name = fileUploadControl.value.split('/').pop().split('\\').pop();
-                        alert(name);
-
                         var parseFile = new Parse.File(file_name, file);
 
                         parseFile.save().then(function() {
@@ -64,6 +62,7 @@ if($class="Brand" && $type = "edit") {
                         });
                     }
 
+                    brandObj.set("brandImage", parseFile);
                     brandObj.save(null,{
                         success: function(obj){
                             var modal=$("#myModal");
