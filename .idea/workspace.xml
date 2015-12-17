@@ -2,34 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a92d572-0563-49a8-a7ac-1c7e6e02f609" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/resources/images/close.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/resources/images/error.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/resources/images/notice.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/resources/images/success.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/resources/images/warning.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/a.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/canvasjs.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.canvasjs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.canvasjs.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/resources/css/jquery.toastmessage.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.toastmessage.js" />
-      <change type="DELETED" beforePath="C:\wamp\www\chartswell\pages\index.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/a.html" afterPath="$PROJECT_DIR$/pages/a.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/files/ajax.php" afterPath="$PROJECT_DIR$/files/ajax.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/blank.html" afterPath="$PROJECT_DIR$/pages/blank.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/buttons.html" afterPath="$PROJECT_DIR$/pages/buttons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/flot.html" afterPath="$PROJECT_DIR$/pages/flot.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/forms.html" afterPath="$PROJECT_DIR$/pages/forms.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/add_beacons.php" afterPath="$PROJECT_DIR$/pages/add_beacons.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/add_brands.php" afterPath="$PROJECT_DIR$/pages/add_brands.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/add_coupons.php" afterPath="$PROJECT_DIR$/pages/add_coupons.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/files/global.php" afterPath="$PROJECT_DIR$/files/global.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/grid.html" afterPath="$PROJECT_DIR$/pages/grid.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/icons.html" afterPath="$PROJECT_DIR$/pages/icons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/files/includes.php" afterPath="$PROJECT_DIR$/files/includes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/files/left-navigation.php" afterPath="$PROJECT_DIR$/files/left-navigation.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/login.php" afterPath="$PROJECT_DIR$/pages/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/morris.html" afterPath="$PROJECT_DIR$/pages/morris.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/notifications.html" afterPath="$PROJECT_DIR$/pages/notifications.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/panels-wells.html" afterPath="$PROJECT_DIR$/pages/panels-wells.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/typography.html" afterPath="$PROJECT_DIR$/pages/typography.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chartswell.iws" />
@@ -52,11 +30,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="add_brands.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/add_brands.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.153846">
+              <caret line="52" column="45" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ajax.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/files/ajax.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.23077">
-              <caret line="64" column="56" selection-start-line="64" selection-start-column="56" selection-end-line="64" selection-end-column="56" />
+            <state vertical-scroll-proportion="-14.384615">
+              <caret line="70" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
               <folding>
                 <marker date="1450313696276" expanded="true" signature="4134:4444" placeholder="..." />
               </folding>
@@ -67,8 +55,18 @@
       <file leaf-file-name="global.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/files/global.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.3461537">
-              <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+            <state vertical-scroll-proportion="71.26923">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.15477997">
+              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -77,8 +75,8 @@
       <file leaf-file-name="left-navigation.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/files/left-navigation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-50.692307">
-              <caret line="368" column="0" selection-start-line="368" selection-start-column="0" selection-end-line="368" selection-end-column="0" />
+            <state vertical-scroll-proportion="-55.423077">
+              <caret line="294" column="59" selection-start-line="294" selection-start-column="59" selection-end-line="294" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -96,14 +94,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41274658">
-              <caret line="85" column="58" selection-start-line="85" selection-start-column="58" selection-end-line="85" selection-end-column="58" />
+            <state vertical-scroll-proportion="8.653846">
+              <caret line="132" column="89" selection-start-line="132" selection-start-column="89" selection-end-line="132" selection-end-column="89" />
               <folding>
-                <element signature="e#10324#10359#0#HTML" expanded="true" />
+                <element signature="e#5139#5174#0#HTML" expanded="true" />
+                <marker date="1450366542250" expanded="true" signature="3488:5740" placeholder="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_beacons.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/add_beacons.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.0">
+              <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+              <folding>
+                <element signature="e#47#69#0#PHP" expanded="true" />
+                <element signature="e#2226#4050#0#HTML" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_coupons.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/add_coupons.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.9230769">
+              <caret line="203" column="63" selection-start-line="203" selection-start-column="63" selection-end-line="203" selection-end-column="63" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -114,50 +136,6 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="76" column="7" selection-start-line="76" selection-start-column="7" selection-end-line="76" selection-end-column="7" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view_beacons.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/view_beacons.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-30.423077">
-              <caret line="139" column="1" selection-start-line="51" selection-start-column="0" selection-end-line="139" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.toastmessage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/jquery.toastmessage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.canvasjs.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/jquery.canvasjs.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.canvasjs.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/jquery.canvasjs.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -179,20 +157,21 @@
       <list>
         <option value="$PROJECT_DIR$/pages/view_beacons.php" />
         <option value="$PROJECT_DIR$/pages/logout.php" />
-        <option value="$PROJECT_DIR$/pages/add_coupons.php" />
-        <option value="$PROJECT_DIR$/pages/add_brands.php" />
         <option value="$PROJECT_DIR$/dist/css/sb-admin-2.css" />
         <option value="$PROJECT_DIR$/pages/remote.html" />
         <option value="$PROJECT_DIR$/pages/a.html" />
-        <option value="$PROJECT_DIR$/pages/login.php" />
         <option value="$PROJECT_DIR$/pages/view_brands.php" />
-        <option value="$PROJECT_DIR$/files/left-navigation.php" />
         <option value="$PROJECT_DIR$/files/ajax.php" />
         <option value="$PROJECT_DIR$/files/includes.php" />
         <option value="$PROJECT_DIR$/js/morris-data.js" />
         <option value="$PROJECT_DIR$/pages/index.html" />
         <option value="$PROJECT_DIR$/files/global.php" />
+        <option value="$PROJECT_DIR$/pages/add_beacons.php" />
+        <option value="$PROJECT_DIR$/pages/add_brands.php" />
+        <option value="$PROJECT_DIR$/files/left-navigation.php" />
         <option value="$PROJECT_DIR$/pages/index.php" />
+        <option value="$PROJECT_DIR$/pages/add_coupons.php" />
+        <option value="$PROJECT_DIR$/pages/login.php" />
       </list>
     </option>
   </component>
@@ -418,6 +397,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../cmc" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="SearchEverywhereHistoryKey" value="left&#9;FILE&#9;file://C:/wamp/www/chartswell/files/left-navigation.php" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -506,7 +486,13 @@
       <option name="project" value="LOCAL" />
       <updated>1450217420695</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="dashboard updated with coupon graph">
+      <created>1450324164725</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1450324164726</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -522,20 +508,20 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18070363" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22835498" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22835498" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24242425" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18070363" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22835498" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24242425" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -579,7 +565,8 @@
     <MESSAGE value="upadted UI and validation" />
     <MESSAGE value="initial implementation of ajax" />
     <MESSAGE value="notification update" />
-    <option name="LAST_COMMIT_MESSAGE" value="notification update" />
+    <MESSAGE value="dashboard updated with coupon graph" />
+    <option name="LAST_COMMIT_MESSAGE" value="dashboard updated with coupon graph" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -619,7 +606,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="67" column="19" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="39" />
           <folding>
-            <element signature="e#397#419#0#PHP" expanded="false" />
+            <element signature="e#395#417#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -710,7 +697,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="67" column="19" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="39" />
           <folding>
-            <element signature="e#397#419#0#PHP" expanded="false" />
+            <element signature="e#395#417#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -801,7 +788,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="67" column="19" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="39" />
           <folding>
-            <element signature="e#397#419#0#PHP" expanded="false" />
+            <element signature="e#395#417#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -906,20 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/add_beacons.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="37.26923">
-          <caret line="80" column="11" selection-start-line="80" selection-start-column="11" selection-end-line="80" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/add_coupons.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/css/sb-admin-2.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -944,14 +917,6 @@
           <folding>
             <element signature="n#!!doc" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/add_brands.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="195" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1006,16 +971,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.9615384">
-          <caret line="37" column="44" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
-          <folding>
-            <marker date="1450313232521" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/notifications.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="27.038462">
@@ -1037,7 +992,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1047,7 +1002,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1068,18 +1023,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/files/left-navigation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-50.692307">
-          <caret line="368" column="0" selection-start-line="368" selection-start-column="0" selection-end-line="368" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/files/ajax.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.23077">
-          <caret line="64" column="56" selection-start-line="64" selection-start-column="56" selection-end-line="64" selection-end-column="56" />
+        <state vertical-scroll-proportion="-14.384615">
+          <caret line="70" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding>
             <marker date="1450313696276" expanded="true" signature="4134:4444" placeholder="..." />
           </folding>
@@ -1096,21 +1043,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pages/add_brands.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.153846">
+          <caret line="52" column="45" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/files/global.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.3461537">
-          <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+        <state vertical-scroll-proportion="71.26923">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/add_beacons.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.0">
+          <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+          <folding>
+            <element signature="e#47#69#0#PHP" expanded="true" />
+            <element signature="e#2226#4050#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/left-navigation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-55.423077">
+          <caret line="294" column="59" selection-start-line="294" selection-start-column="59" selection-end-line="294" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41274658">
-          <caret line="85" column="58" selection-start-line="85" selection-start-column="58" selection-end-line="85" selection-end-column="58" />
+        <state vertical-scroll-proportion="8.653846">
+          <caret line="132" column="89" selection-start-line="132" selection-start-column="89" selection-end-line="132" selection-end-column="89" />
           <folding>
-            <element signature="e#10324#10359#0#HTML" expanded="true" />
+            <element signature="e#5139#5174#0#HTML" expanded="true" />
+            <marker date="1450366542250" expanded="true" signature="3488:5740" placeholder="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/add_coupons.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9230769">
+          <caret line="203" column="63" selection-start-line="203" selection-start-column="63" selection-end-line="203" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15477997">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>

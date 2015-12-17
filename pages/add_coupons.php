@@ -13,7 +13,16 @@ if(isset($_POST['submit_coupon'])) {
     $coupon = new ParseObject("Coupon");
     $coupon->set("brand", $brand);
     $coupon->set("title", $_POST['coupon_title']);
+    $coupon->set("brandName", $brand->get("name"));
     $coupon->set("type", $_POST['coupon_type']);
+
+    if($_POST['coupon_type']=="Public"){
+        $coupon->set("isFirstUpdate", true);
+    }
+    else
+        $coupon->set("isFirstUpdate", false);
+
+
     $coupon->set("currentUsage", 0);
     $coupon->set("maxUsage", intval($_POST['coupon_max_usage']));
 
@@ -78,6 +87,53 @@ if(isset($_POST['submit_coupon'])) {
             $('#dataTables-example').DataTable({
                 responsive: true
             });
+            <?php
+            if($post_message!=""){
+            ?>
+            var form_noti = "<div class=\"alert alert-success\">COUPON SUCCESSFULLY SAVED</div>";
+            $("#formNotification").html(form_noti);
+            showSuccessToast(name+" Successfully Saved.",false);
+
+            <?php
+            }
+            ?>
+
+            $('#dataTables-example').DataTable({
+                responsive: true
+            });
+
+            $("#brand_form").submit(function(){
+                var error=false;
+                var file=false;
+
+                $("#brand_form :text").each(function(){
+                    if($(this).val()=="") {
+                        $(this).parent().addClass("has-error");
+//                        error = true;
+                        $(this).val("az");
+                    }
+                });
+                /*
+                 $("#brand_form textarea").each(function(){
+                 if($(this).val()=="") {
+                 $(this).parent().addClass("has-error");
+                 error = true;
+                 }
+                 });
+                 */
+                if($("input:file").val().trim()=="") {
+                    error = true;
+                    file = true;
+                }
+                if(error){
+                    console.log("error in form");
+                    var form_error = "<div class=\"alert alert-danger\">Required Fields must not be left blank. </div>";
+                    if(file)
+                        form_error += "<div class=\"alert alert-danger\">Uploading Brand Image is Required. </div>";
+                    $("#formNotification").html(form_error);
+                    return false;
+                }
+            });
         });
     </script>
 
@@ -116,6 +172,9 @@ function content()
                     </div>
                     <div class="panel-body">
                         <div class="row">
+                            <div id="formNotification"></div>
+                        </div>
+                        <div class="row">
                             <div class="col-lg-6">
                                 <form action="" method="post" role="form" enctype="multipart/form-data">
                                     <div class="form-group">
@@ -142,6 +201,7 @@ function content()
                                             <option value='Public'>Public</option>;
                                             <option value='Pass By'>Pass By</option>;
                                             <option value='Sign Up'>Sign Up</option>;
+                                            <option value='News'>News</option>;
                                         </select>
                                     </div>
                                     <div class="form-group col-lg-6">

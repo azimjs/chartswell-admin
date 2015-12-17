@@ -6,32 +6,40 @@ use Parse\ParseFile;
 
 $post_message = "";
 
-if(isset($_POST['submit_coupon'])) {
+if(isset($_POST['submit_beacon'])) {
+
+    $beacon = new ParseObject("Beacon");
+
     $brandQuery = new ParseQuery("Brand");
-    $brand = $brandQuery->get($_POST['coupon_brand']);
+    $beacon_brand = $brandQuery->get($_POST['beacon_brand']);
 
-    $coupon = new ParseObject("Coupon");
-    $coupon->set("brand", $brand);
-    $coupon->set("title", $_POST['coupon_title']);
-    $coupon->set("type", $_POST['coupon_type']);
-    $coupon->set("currentUsage", 0);
-    $coupon->set("maxUsage", intval($_POST['coupon_max_usage']));
+//    print_r($beacon_brand);
 
-    $startDateTime = new DateTime($_POST['coupon_start_datetime']);
-    $coupon->set("startDateTime", $startDateTime);
+    $relation = $beacon->getRelation("brand");
+    $relation->add($beacon_brand);
 
-    $endDateTime = new DateTime($_POST['coupon_end_datetime']);
-    $coupon->set("endDateTime", $endDateTime);
+    $regionQuery = new ParseQuery("Region");
+    $beacon_region = $regionQuery->get($_POST['beacon_region']);
 
-    $file = ParseFile::createFromData( file_get_contents( $_FILES['coupon_image']['tmp_name'] ), $_FILES['coupon_image']['name']  );
-    $file->save();
+    $beacon->set("UUID", $_POST['beacon_uuid']);
+    $beacon->set("major", intval($_POST['beacon_major']));
+    $beacon->set("minor", intval($_POST['beacon_minor']));
+    $beacon->set("name", $_POST['beacon_name']);
+    $beacon->set("region", $beacon_region);
+    $beacon->set("type", $_POST['beacon_type']);
 
-    $coupon->set("file", $file);
-    $coupon->set("visitThreshold", intval($_POST['coupon_visit_threshold']));
+//    print_r($beacon);
+    try {
+        $beacon->save();
+//        echo 'New object created with objectId: ' . $beacon->getObjectId();
+    } catch (ParseException $ex) {
+        // Execute any logic that should take place if the save fails.
+        // error is a ParseException object with an error code and message.
+//        echo 'Failed to create new object, with error message: ' . $ex->getMessage();
+    }
 
-    $coupon->save();
 
-    $post_message = "COUPON SAVED";
+    $post_message = "BEACON SAVED";
 //    exit;
 }
 ?>
@@ -46,7 +54,7 @@ if(isset($_POST['submit_coupon'])) {
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Add Coupons - <?= $SITE_NAME ?> </title>
+        <title>Add Beacon - <?= $SITE_NAME ?> </title>
 
         <?php
         $include_type = "header";
@@ -77,6 +85,53 @@ if(isset($_POST['submit_coupon'])) {
         $(document).ready(function () {
             $('#dataTables-example').DataTable({
                 responsive: true
+            });
+            <?php
+            if($post_message!=""){
+            ?>
+            var form_noti = "<div class=\"alert alert-success\">BEACON SUCCESSFULLY SAVED</div>";
+            $("#formNotification").html(form_noti);
+            showSuccessToast(name+" Successfully Saved.",false);
+
+            <?php
+            }
+            ?>
+
+            $('#dataTables-example').DataTable({
+                responsive: true
+            });
+
+            $("#brand_form").submit(function(){
+                var error=false;
+                var file=false;
+
+                $("#brand_form :text").each(function(){
+                    if($(this).val()=="") {
+                        $(this).parent().addClass("has-error");
+//                        error = true;
+                        $(this).val("az");
+                    }
+                });
+                /*
+                 $("#brand_form textarea").each(function(){
+                 if($(this).val()=="") {
+                 $(this).parent().addClass("has-error");
+                 error = true;
+                 }
+                 });
+                 */
+                if($("input:file").val().trim()=="") {
+                    error = true;
+                    file = true;
+                }
+                if(error){
+                    console.log("error in form");
+                    var form_error = "<div class=\"alert alert-danger\">Required Fields must not be left blank. </div>";
+                    if(file)
+                        form_error += "<div class=\"alert alert-danger\">Uploading Brand Image is Required. </div>";
+                    $("#formNotification").html(form_error);
+                    return false;
+                }
             });
         });
     </script>
@@ -115,6 +170,9 @@ function content()
                         Adding a New Beacon
                     </div>
                     <div class="panel-body">
+                        <div class="row">
+                            <div id="formNotification"></div>
+                        </div>
                         <div class="row">
                             <div class="col-lg-6">
                                 <form action="" method="post" role="form" enctype="multipart/form-data">

@@ -4,7 +4,7 @@ session_start();
 include("../parse.php");
 
 error_reporting(0);
-$redirect_page = "view_brands.php";
+$redirect_page = "index.php";
 use Parse\ParseUser;
 use Parse\ParseException;
 if(isset($_SESSION['login_user'])){

@@ -70,6 +70,8 @@ if(isset($_POST['submit_brand'])) {
             ?>
             var form_noti = "<div class=\"alert alert-success\">BRAND SUCCESSFULLY SAVED</div>";
             $("#formNotification").html(form_noti);
+            showSuccessToast(name+" Successfully Saved.",false);
+
             <?php
             }
             ?>
@@ -86,7 +88,7 @@ if(isset($_POST['submit_brand'])) {
                     if($(this).val()=="") {
                         $(this).parent().addClass("has-error");
 //                        error = true;
-                        $(this).val("az");
+//                        $(this).val("az");
                     }
                 });
 /*

@@ -10,7 +10,7 @@
  * Time: 11:51 AM
  */
 
-//error_reporting(0);
+error_reporting(0);
 
 
 $SITE_NAME = "Chartswell Admin Panel";
